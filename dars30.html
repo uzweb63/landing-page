@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form styles</title>
+        <link rel="stylesheet" href="./css/main30.css">
+        <style>
+            .container {
+                padding: 30px;
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                width: 50%;
+                background-color: #2e856f;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #006a4e;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/server.php" method="get">
+                <label for="firstname">Ism</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Ismingiz">
+    
+                <label for="lastname">Familiya</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Familiyangiz">
+    
+                <label for="country">Davlat</label>
+                <select id="country" name="country">
+                    <option value="uzbekistan">O'zbekiston</option>
+                    <option value="russia">Rossiya</option>
+                    <option value="usa">AQSH</option>
+                </select> 
+                
+                <label for="message">Xabar</label>
+                <textarea id="message" name="message" placeholder="Xabaringiz"></textarea>
+    
+                <button type="submit" class="button">Jo'natish</button>
+            </form>
+        </div>
+    </body>
+</html>

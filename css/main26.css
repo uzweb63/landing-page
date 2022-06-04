@@ -1,0 +1,6 @@
+.box {
+    height: 1000px;
+    background-image: url("../images/sample-image.jpeg");
+    color: white;
+    background-repeat: repeat-x;
+}
